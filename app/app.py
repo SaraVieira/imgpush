@@ -159,12 +159,7 @@ def _resize_image(path, width, height):
 
 @app.route("/", methods=["GET"])
 def root():
-    return """
-<form action="/" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" id="file">
-    <input type="submit" value="Upload" name="submit">
-</form>
-"""
+    return ""
 
 
 @app.route("/liveness", methods=["GET"])
